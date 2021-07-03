@@ -1,0 +1,233 @@
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: max-content;
+    display: block;
+}
+
+.card-container {
+    font-family: 'Manrope', sans-serif;
+    color: var(--desaturated-dark-blue);
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: #ffffff;
+    box-shadow: 0.5em 0.5em 1em 0.5em var(--light-grayish-blue);
+}
+
+.feature-image {
+    height: 12.5em;
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -0.3125em;
+}
+
+.card-title {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 1em;
+    padding: 2.5em 1.875em 0em;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 0.8125em;
+    line-height: 1.5;
+    margin-bottom: 3em;
+    padding: 0em 1.875em;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0em 1.875em 1em;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.data {
+    flex-grow: 2;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 0.8125em;
+    color: var(--very-dark-grayish-blue);
+}
+
+.date {
+    font-weight: 400;
+    font-size: 0.8125em;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-container {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.75em;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 100;
+}
+
+.info .icon {
+    fill: var(--very-dark-grayish-blue);
+}
+
+.info{position:relative}
+
+.share {
+    padding: 1em 1.875em;
+    background-color: var(--very-dark-grayish-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    width:100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right:0;
+    display:none;
+}
+
+.label {
+    font-size: .75em;
+    letter-spacing: 0.3125em;
+    margin-right: .75em;
+}
+
+.social-container {
+    flex-grow: 2;
+}
+
+.share .icon {
+    fill: #ffffff;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: .75em;
+}
+
+.share .icon-container {
+    background-color: var(--desaturated-dark-blue);
+}
+
+.share .icon-container .icon {
+    fill: #ffffff;
+    margin-right: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:1440px) {
+    .card {
+        max-width: 45.625em;
+        display: grid;
+        grid-template-columns: 17.75em 1fr;
+        grid-template-rows: 284px;
+        justify-content: stretch;
+        align-items: stretch;
+        align-content: stretch;
+        overflow: visible;
+    }
+
+    .feature-image {
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-position-x: 0;
+        background-position-y: 0;
+        border-radius: 1em 0em 0em 1em;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .info {
+        position: relative;
+    }
+
+    .share {
+        padding: .75em 2em;
+        border-radius: .5em;
+        z-index: 100;
+        width: 15em;
+        bottom: 135%;
+        margin-right:-4em;
+        box-shadow: 0.5em 0.5em 1em 0.5em var(--light-grayish-blue);
+        display:none;
+    }
+
+    .share .icon-container {
+        display: none;
+    }
+
+    .share::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: .5em;
+        border-style: solid;
+        border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
+    }
+
+    .share .social-container {
+        flex-grow: 0;
+    }
+}
