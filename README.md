@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./screenshot.png)
+[https://github.com/ninjulia/FEM-Article-Preview-Componet/blob/main/screenshot.PNG](https://github.com/ninjulia/FEM-Article-Preview-Componet/blob/main/screenshot.PNG)
 
 ### Links
 
