@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-[https://github.com/ninjulia/FEM-Article-Preview-Componet/blob/main/screenshot.PNG](https://github.com/ninjulia/FEM-Article-Preview-Componet/blob/main/screenshot.PNG)
+![screenshot](screenshot.PNG?raw=true)
 
 ### Links
 
-- Solution URL: [https://github.com/ninjulia/FEM-Article-Preview-Componet](https://github.com/ninjulia/FEM-Article-Preview-Componet)
-- Live Site URL: [https://ninjulia.github.io/FEM-Article-Preview-Componet/](https://ninjulia.github.io/FEM-Article-Preview-Componet/)
+- Solution URL: [https://github.com/ninjulia/FEM_Article-Preview-Componet/](https://github.com/ninjulia/FEM_Article-Preview-Componet/)
+- Live Site URL: [https://ninjulia.github.io/FEM_Article-Preview-Componet/](https://ninjulia.github.io/FEM_Article-Preview-Componet/)
 
 ## My process
 
